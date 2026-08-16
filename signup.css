@@ -1,0 +1,593 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.welcome-section {
+    width: 45%;
+
+    background: linear-gradient(
+        135deg,
+        #0b1f3a,
+        #123e69
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px;
+}
+
+
+.welcome-content {
+    max-width: 520px;
+    margin: auto;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+    font-size: 29px;
+    font-weight: 800;
+
+    margin-bottom: 70px;
+}
+
+.logo span,
+.mobile-logo span {
+    color: #2563eb;
+}
+
+
+/* =========================
+   WELCOME TEXT
+========================= */
+
+.welcome-content h1 {
+    font-size: 46px;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.welcome-content > p {
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #d7e3f0;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefit {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.icon {
+    min-width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+.benefit h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.benefit p {
+    font-size: 14px;
+
+    color: #c7d5e4;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
+.form-section {
+    width: 55%;
+
+    background: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 45px;
+}
+
+
+.signup-box {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* =========================
+   MOBILE LOGO
+========================= */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.signup-box h2 {
+    font-size: 30px;
+
+    margin-bottom: 9px;
+}
+
+
+.subtitle {
+    font-size: 15px;
+
+    color: #718096;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   NAME ROW
+========================= */
+
+.name-row {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.name-row .input-group {
+    width: 50%;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+
+.input-group label {
+    display: block;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #26344a;
+
+    margin-bottom: 8px;
+}
+
+
+.input-group input,
+.input-group select {
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #d9e0e8;
+
+    border-radius: 8px;
+
+    padding: 0 14px;
+
+    font-size: 14px;
+
+    color: #26344a;
+
+    background: #ffffff;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(40, 199, 111, 0.12);
+}
+
+
+.input-group input::placeholder {
+    color: #a0aab7;
+}
+
+
+/* =========================
+   PASSWORD HINT
+========================= */
+
+.password-hint {
+    font-size: 12px;
+
+    color: #8a96a6;
+
+    margin-top: 6px;
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+    margin: 5px 0 20px;
+}
+
+
+.terms label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    font-size: 13px;
+
+    color: #657184;
+
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+
+.terms input {
+    width: 16px;
+    height: 16px;
+
+    margin-top: 2px;
+
+    accent-color: #2563eb;
+
+    cursor: pointer;
+}
+
+
+.terms a {
+    color: #1677ff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-btn {
+    width: 100%;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+    
+}
+
+ a{
+    text-decoration: none;
+    color: white;
+}
+
+.signup-btn:hover {
+    background: #2563eb;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 15px
+        rgba(40, 199, 111, 0.2);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 24px 0;
+
+    color: #a0aab7;
+
+    font-size: 11px;
+}
+
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    height: 1px;
+
+    background: #e2e7ed;
+
+    flex: 1;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.social-btn {
+    flex: 1;
+
+    height: 47px;
+
+    border: 1px solid #d9e0e8;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #354052;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+
+.social-btn:hover {
+    background: #f7f9fb;
+
+    border-color: #bfc8d4;
+}
+
+
+/* GOOGLE */
+
+.google-icon {
+    color: #4285f4;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* LINKEDIN */
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+
+    background: #0a66c2;
+
+    color: white;
+
+    border-radius: 3px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-text {
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #718096;
+
+    margin-top: 25px;
+}
+
+
+.login-text a {
+    color: #1677ff;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 950px) {
+
+    .welcome-section {
+        display: none;
+    }
+
+    .form-section {
+        width: 100%;
+
+        min-height: 100vh;
+
+        padding: 30px 20px;
+    }
+
+    .signup-box {
+        max-width: 500px;
+    }
+
+    .mobile-logo {
+        display: block;
+
+        text-align: center;
+
+        font-size: 27px;
+
+        font-weight: 800;
+
+        margin-bottom: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+
+    .form-section {
+        padding: 25px 18px;
+    }
+
+    .signup-box h2 {
+        font-size: 26px;
+    }
+
+    .name-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .name-row .input-group {
+        width: 100%;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+}

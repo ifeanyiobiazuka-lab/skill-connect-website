@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Create Account | Job and Skill</title><link rel="stylesheet" href="signup.css"><style>.notice{margin:14px 0;padding:12px;border-radius:8px;display:none}.notice.error{display:block;background:#fff1f2;color:#b42318}.notice.success{display:block;background:#ecfdf3;color:#067647}</style></head>
+<body><main class="signup-container"><section class="welcome-section"><div class="welcome-content"><div class="logo"><span>Job</span> and Skill</div><h1>Build your future with us.</h1><p>Create your account and start learning skills that can move your career forward.</p><div class="benefits"><div class="benefit"><div class="icon">✓</div><div><h3>Choose practical courses</h3><p>Select a programme that matches your career goals.</p></div></div><div class="benefit"><div class="icon">✓</div><div><h3>Get reviewed personally</h3><p>Every course application is reviewed by our administrator.</p></div></div><div class="benefit"><div class="icon">✓</div><div><h3>Track your decision</h3><p>Follow your application directly from your dashboard.</p></div></div></div></div></section>
+<section class="form-section"><div class="signup-box"><div class="mobile-logo"><span>Job</span> and Skill</div><h2>Create your account</h2><p class="subtitle">Join Job and Skill and start building your future.</p><div id="notice" class="notice"></div>
+<form id="signupForm"><div class="name-row"><div class="input-group"><label>First Name</label><input id="firstName" required placeholder="First name"></div><div class="input-group"><label>Last Name</label><input id="lastName" required placeholder="Last name"></div></div>
+<div class="input-group"><label>Email Address</label><input id="email" type="email" required placeholder="Enter your email"></div>
+<div class="input-group"><label>Phone Number</label><input id="phone" required placeholder="08012345678"></div>
+<div class="input-group"><label>What are you interested in?</label><select id="accountType" required><option value="">Select an option</option><option>Online Program</option><option>Mentorship</option><option>Consultation</option></select></div>
+<div class="input-group"><label>Password</label><input id="password" type="password" minlength="8" required placeholder="At least 8 characters"></div>
+<div class="input-group"><label>Confirm Password</label><input id="confirmPassword" type="password" minlength="8" required placeholder="Repeat password"></div>
+<div class="terms"><label><input id="terms" type="checkbox" required><span>I agree to the terms and privacy policy.</span></label></div>
+<button class="signup-btn" type="submit">Create Account</button></form>
+<p class="login-text">Already have an account? <a href="login.html">Sign in</a></p></div></section></main><script src="js/auth.js"></script></body></html>

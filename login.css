@@ -1,0 +1,428 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================
+   LEFT / WELCOME SECTION
+========================= */
+
+.welcome-section {
+    width: 48%;
+    background: linear-gradient(
+        135deg,
+        #0b1f3a,
+        #123e69
+    );
+
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.welcome-content {
+    max-width: 520px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+
+.logo span,
+.mobile-logo span {
+    color: #2563eb;
+}
+
+.welcome-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.welcome-content > p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #d7e3f0;
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.feature h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #c7d5e4;
+}
+
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+    width: 52%;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #718096;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+
+/* =========================
+   MOBILE LOGO
+========================= */
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #26344a;
+}
+
+.input-group input {
+    width: 100%;
+    height: 52px;
+
+    border: 1px solid #d9e0e8;
+    border-radius: 8px;
+
+    padding: 0 15px;
+    font-size: 15px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(40, 199, 111, 0.12);
+}
+
+.input-group input::placeholder {
+    color: #a0aab7;
+}
+
+
+/* =========================
+   PASSWORD LABEL
+========================= */
+
+.password-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-label a {
+    font-size: 13px;
+    color: #1677ff;
+    text-decoration: none;
+}
+
+.password-label a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   REMEMBER ME
+========================= */
+
+.remember {
+    margin-bottom: 22px;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    color: #5f6b7a;
+
+    cursor: pointer;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+    accent-color: #2563eb;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+    width: 100%;
+    height: 52px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 28px 0;
+
+    color: #a0aab7;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    background: #e2e7ed;
+    flex: 1;
+}
+
+
+/* =========================
+   SOCIAL BUTTONS
+========================= */
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.social-btn {
+    width: 100%;
+    height: 48px;
+
+    border: 1px solid #d9e0e8;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #354052;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background: #f7f9fb;
+    border-color: #bfc8d4;
+}
+
+.google-icon {
+    color: #4285f4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.linkedin-icon {
+    background: #0a66c2;
+    color: white;
+
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SIGNUP TEXT
+========================= */
+
+.signup-text {
+    text-align: center;
+    margin-top: 30px;
+
+    color: #718096;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #1677ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .welcome-section {
+        display: none;
+    }
+
+    .form-section {
+        width: 100%;
+        min-height: 100vh;
+        padding: 30px 20px;
+    }
+
+    .login-box {
+        max-width: 450px;
+    }
+
+    .mobile-logo {
+        display: block;
+        text-align: center;
+
+        font-size: 27px;
+        font-weight: 800;
+
+        margin-bottom: 55px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .form-section {
+        padding: 25px 18px;
+    }
+
+    .login-box h2 {
+        font-size: 26px;
+    }
+
+    .mobile-logo {
+        margin-bottom: 40px;
+    }
+
+    .login-btn,
+    .input-group input {
+        height: 50px;
+    }
+}

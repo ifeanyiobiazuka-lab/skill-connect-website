@@ -1,0 +1,766 @@
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navbar {
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e8ee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #2457d6;
+}
+
+.navbar nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #596274;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #2457d6;
+}
+
+.login-btn {
+    padding: 10px 20px;
+
+    border: 1px solid #2457d6;
+
+    border-radius: 6px;
+
+    color: #2457d6;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.login-btn:hover {
+    background: #2457d6;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   REVIEW PAGE
+   ========================================================= */
+
+.review-page {
+    padding: 70px 5%;
+}
+
+.review-container {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.review-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.review-header p {
+    color: #2457d6;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+.review-header h1 {
+    font-size: 42px;
+
+    margin: 8px 0 12px;
+}
+
+.review-header span {
+    display: block;
+
+    max-width: 620px;
+
+    margin: auto;
+
+    color: #758096;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 45px;
+}
+
+.progress-step {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.progress-step span {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e2e5eb;
+
+    color: #7b8495;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.progress-step p {
+    color: #8992a3;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.progress-step.active span {
+    background: #2457d6;
+
+    color: #ffffff;
+}
+
+.progress-step.active p {
+    color: #2457d6;
+}
+
+.progress-line {
+    width: 100px;
+    height: 2px;
+
+    margin: 0 12px 25px;
+
+    background: #dfe3e9;
+}
+
+.progress-line.active {
+    background: #2457d6;
+}
+
+
+/* =========================================================
+   SELECTED CARD
+   ========================================================= */
+
+.selected-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(20, 35, 60, 0.04);
+}
+
+.selected-label {
+    color: #2457d6;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 25px;
+}
+
+.selection-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.course-preview {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex: 1;
+}
+
+.course-icon {
+    min-width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #eaf0ff;
+
+    color: #2457d6;
+
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.category {
+    color: #2457d6;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.course-preview h2 {
+    font-size: 20px;
+
+    margin: 5px 0;
+}
+
+.course-preview p {
+    color: #758096;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   SELECTION DETAILS
+   ========================================================= */
+
+.selection-details {
+    min-width: 260px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    padding-left: 25px;
+
+    border-left: 1px solid #eeeeee;
+}
+
+.selection-details div {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.selection-details span {
+    color: #8992a3;
+
+    font-size: 10px;
+}
+
+.selection-details strong {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   CONTACT CARD
+   ========================================================= */
+
+.contact-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 10px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 25px rgba(20, 35, 60, 0.04);
+}
+
+.card-heading {
+    margin-bottom: 30px;
+}
+
+.card-heading h2 {
+    font-size: 23px;
+
+    margin-bottom: 7px;
+}
+
+.card-heading p {
+    color: #758096;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #30394a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: #8992a3;
+
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dfe3e9;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2457d6;
+
+    box-shadow:
+        0 0 0 3px rgba(36, 87, 214, 0.08);
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a1a8b5;
+}
+
+
+/* =========================================================
+   AGREEMENT
+   ========================================================= */
+
+.agreement {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin: 5px 0 25px;
+}
+
+.agreement input {
+    margin-top: 4px;
+
+    accent-color: #2457d6;
+}
+
+.agreement label {
+    color: #687286;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2457d6;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1745b5;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TRUST MESSAGE
+   ========================================================= */
+
+.trust-message {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    color: #8992a3;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+.trust-message p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    margin-top: 40px;
+
+    padding: 60px 7% 20px;
+
+    background: #172033;
+
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 50px;
+}
+
+.footer-brand .logo {
+    color: #ffffff;
+}
+
+.footer-brand p {
+    max-width: 280px;
+
+    margin-top: 15px;
+
+    color: #aeb7c6;
+
+    font-size: 13px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+.footer-column a {
+    color: #aeb7c6;
+
+    font-size: 12px;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    max-width: 1150px;
+
+    margin: 45px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #30394b;
+
+    color: #8993a4;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .selection-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .selection-details {
+        width: 100%;
+
+        padding-left: 0;
+
+        padding-top: 20px;
+
+        border-left: none;
+
+        border-top: 1px solid #eeeeee;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 70px;
+
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .login-btn {
+        padding: 8px 14px;
+
+        font-size: 11px;
+    }
+
+    .review-page {
+        padding: 50px 5%;
+    }
+
+    .review-header h1 {
+        font-size: 32px;
+    }
+
+    .review-header span {
+        font-size: 13px;
+    }
+
+    .progress-line {
+        width: 45px;
+
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    .selected-card,
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .course-preview {
+        align-items: flex-start;
+    }
+
+    .course-preview h2 {
+        font-size: 17px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .review-header h1 {
+        font-size: 28px;
+    }
+
+    .progress-step p {
+        font-size: 9px;
+    }
+
+    .progress-line {
+        width: 25px;
+    }
+
+    .selection-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
